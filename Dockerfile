@@ -4,7 +4,7 @@ EXPOSE 3000
 WORKDIR /home/node/app
 RUN <<EOF
 npm init
-npm install
+npm install express
 EOF
 
 COPY . /home/node/app
