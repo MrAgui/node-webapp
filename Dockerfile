@@ -2,10 +2,8 @@ FROM node:lts-slim
 
 EXPOSE 3000
 WORKDIR /home/node/app
-RUN <<EOF
-npm init
-npm install express
-EOF
+RUN npm install 
+
 
 COPY . /home/node/app
 
